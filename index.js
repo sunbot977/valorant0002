@@ -24,7 +24,8 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 client.on("ready", () => {
   console.log("켰다.")
 
-  client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }, status: "STREAMING", url:"https://www.twitch.tv/sangmin4097"})
+  client.user.setActivity('TWITCH', { type: 'STREAMING', url: 'https://www.twitch.tv/sangmin4097'});
+  client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }})
 
   let state_list = [
     "구매문의 : 총관리자 OR 티켓",
@@ -37,7 +38,7 @@ client.on("ready", () => {
   function changeState() {
     setTimeout(() => {
       console.log( "상태 변경 -> ", state_list[state_list_index] );
-      client.user.setPresence({ activity: { name: state_list[state_list_index] }, status: "STREAMING", url:"https://www.twitch.tv/sangmin4097" })
+      client.user.setPresence({ activity: { name: state_list[state_list_index] } })
       state_list_index += 1;
       if(state_list_index >= state_list.length) {
         state_list_index = 0;
