@@ -26,7 +26,7 @@ client.on("ready", () => {
 
   for(client.user.setActivity('TWITCH', { type: 'STREAMING', url: 'https://www.twitch.tv/onscreen'});
   await.sleep(5);
-  client.user.setPresence({ activity: { name: "?명령어를 입력해보세요." }, status: "online"}));
+  client.user.setPresence({ activity: { name: "?명령어를 입력해보세요." }, status: "STREAMING"}));
 })
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild
