@@ -34,10 +34,10 @@ client.on("ready", () => {
   let change_delay = 4000; // 이건 초입니당. 1000이 1초입니당.
 
   function changeState() {
+    client.user.setPresence({ activity: { name: "", type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
     setTimeout(() => {
       console.log( "상태 변경 -> ", state_list[state_list_index] );
       client.user.setPresence({ activity: { name: state_list[state_list_index] } })
-      client.user.setPresence({ activity: { name: "TWITCH", type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
       state_list_index += 1;
       if(state_list_index >= state_list.length) {
         state_list_index = 0;
