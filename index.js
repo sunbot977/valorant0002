@@ -24,12 +24,12 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 client.on("ready", () => {
   console.log("켰다.")
 
-  client.user.setPresence({ game: { name: '구매문의 : 총관리자 OR 티켓' }, status: 'online' })
+  client.user.setPresence({ game: { name: "구매문의 : 총관리자 OR 티켓" }, status: "online" })
 
   let state_list = [
-    '구매문의 : 총관리자 OR 티켓',
-    '?도움말을 입력해보세요.',
-    'VALORANT 전문 RAZE샵',
+    "구매문의 : 총관리자 OR 티켓",
+    "?도움말을 입력해보세요.",
+    "VALORANT 전문 RAZE샵",
   ]
   let state_list_index = 1;
   let change_delay = 3000; // 이건 초입니당. 1000이 1초입니당.
@@ -37,7 +37,7 @@ client.on("ready", () => {
   function changeState() {
     setTimeout(() => {
       console.log( '상태 변경 -> ', state_list[state_list_index] );
-      client.user.setPresence({ game: { name: state_list[state_list_index] }, status: 'online' })
+      client.user.setPresence({ game: { name: state_list[state_list_index] }, status: "online" })
       state_list_index += 1;
       if(state_list_index >= state_list.length) {
         state_list_index = 0;
