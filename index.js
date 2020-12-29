@@ -27,12 +27,12 @@ client.on("ready", () => {
    client.change_presence({ activity: { name: "?명령어를 입력해보세요.", name: "구매문의" }, status: "online" })
 
   async.def.bt(games)
-    await client.wait_until_ready()
+     client.wait_until_ready()
 
     while (not)client.is_closed()
         for (g in games)
-            await client.change_presence(status = discord.Status.online, activity = discord.Game(g))
-            await asyncio.sleep(5)
+           client.change_presence(status = discord.Status.online, activity = discord.Game(g))
+           asyncio.sleep(5)
 })
 
 client.on("guildMemberAdd", (member) => {
