@@ -41,10 +41,10 @@ client.on("ready", () => {
       if(state_list_index >= state_list.length) {
         state_list_index = 0;
       }
+      client.user.setActivity({ type: "STREAMING", url: "https://www.twitch.tv/sangmin4097"});
       changeState()
     }, change_delay);
   }
-  client.user.setActivity({ type: "STREAMING", url: "https://www.twitch.tv/sangmin4097"});
   changeState();
 });
 
