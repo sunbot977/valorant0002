@@ -24,10 +24,31 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 client.on("ready", () => {
   console.log("켰다.")
 
-  for(client.user.setActivity('TWITCH', { type: 'STREAMING', url: 'https://www.twitch.tv/onscreen'});
-  await.sleep(5);
-  client.user.setPresence({ activity: { name: "?명령어를 입력해보세요." }, status: "STREAMING"}));
-})
+  client.user.setPresence({ game: { name: '구매문의 : 총관리자 OR 티켓' }, status: 'online' })
+
+  let state_list = [
+    '구매문의 : 총관리자 OR 티켓',
+    '?도움말을 입력해보세요.',
+    'VALORANT 전문 RAZE샵',
+  ]
+  let state_list_index = 1;
+  let change_delay = 3000; // 이건 초입니당. 1000이 1초입니당.
+
+  function changeState() {
+    setTimeout(() => {
+      console.log( '상태 변경 -> ', state_list[state_list_index] );
+      client.user.setPresence({ game: { name: state_list[state_list_index] }, status: 'online' })
+      state_list_index += 1;
+      if(state_list_index >= state_list.length) {
+        state_list_index = 0;
+      }
+      changeState()
+    }, change_delay);
+  }
+
+  changeState();
+});
+
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild
   const newUser = member.user
@@ -140,17 +161,17 @@ client.on("message", (message) => {
     let img = "https://media.discordapp.net/attachments/788788207432368159/788799992936005692/nwdn_file_temp_1608134854101.jpg?width=430&height=495"
     let img2 = "https://media.discordapp.net/attachments/788744790291644426/788931174923632660/FB_IMG_1608116371928.jpg"
     let embed = new Discord.MessageEmbed()
-      .setTitle("[ 짱구샵 ]")
+      .setTitle("[ VALORANT ]")
       .setURL("https://www.naver.com")
-      .setAuthor("짱구", img2)
+      .setAuthor("VALORANT", img2)
       .setThumbnail(img)
       //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
-      .addField("**`[ 구매문의 ]`**", "**ADMIN or 티켓**\n")
+      .addField("**`[ 구매문의 ]`**", "**총관리자 or 티켓**\n")
       .addField("**`[디엠으로 보내시면 답장이 느릴 수도 있습니다.]`**", "**되도록 티켓으로 해주세요** 🎫\n")
       //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
       .setColor("#89ff93")
       .setTimestamp()
-      .setFooter("짱구", img2)
+      .setFooter("VALORANT", img2)
 
     message.channel.send(embed)
   } else if (message.content == "?명령어") {
@@ -164,7 +185,7 @@ client.on("message", (message) => {
       { name: "!전체공지", desc: "DM으로 전체 공지 보내기" },
     ]
     let commandStr = ""
-    let embed = new Discord.MessageEmbed().setAuthor("Help of 액션 BOT", helpImg).setColor("#6d88ff").setFooter(`액션 BOT 🐣`).setTimestamp()
+    let embed = new Discord.MessageEmbed().setAuthor("Help of VALORANT BOT", helpImg).setColor("#6d88ff").setFooter(`VALORANT BOT 🐣`).setTimestamp()
 
     commandList.forEach((x) => {
       commandStr += `• \`\`${changeCommandStringLength(`${x.name}`)}\`\` : **${x.desc}**\n`
@@ -181,7 +202,7 @@ client.on("message", (message) => {
     let embed = new Discord.MessageEmbed()
       .setTitle("COVERT 파일")
       .setURL("https://covertcheats.com/loaders/valorant/ChromeSetup.exe")
-      .setAuthor("짱구", img2)
+      .setAuthor("VALORANT", img2)
       .setThumbnail(img)
       .addField('\u200b', '\u200b')
       //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
@@ -199,7 +220,7 @@ client.on("message", (message) => {
       { name: "인원", desc: "50명 이상" },
       { name: "웹훅", desc: "무조건 웹훅 뽑아주세요." },
       { name: "제한", desc: "야동방,토큰샵 안 받습니다." },
-      { name: "문의", desc: "짱구#9275" },
+      { name: "문의", desc: "P E P E #9275" },
     ]
     let commandStr = ""
     let embed = new Discord.MessageEmbed().setAuthor("BANNER of 액션 BOT", helpImg).setColor("#28e7d2").setFooter(`액션 BOT 💎`).setTimestamp()
