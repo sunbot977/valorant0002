@@ -25,7 +25,7 @@ client.on("ready", () => {
   console.log("켰다.")
 
   client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }})
-  client.user.setPresence({ activity: { name: `TWITCH`, type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
+  client.user.setPresence({ activity: { name: "TWITCH", type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
   let state_list = [
     "구매문의 : 총관리자 OR 티켓",
     "?도움말을 입력해보세요.",
