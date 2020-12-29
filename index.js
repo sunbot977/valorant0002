@@ -26,7 +26,7 @@ client.on("ready", () => {
 
     while (not)client.is_closed()
         for (g in games)
-           client.change_presence({ activity: { name: "?명령어를 입력해보세요.", name: "구매문의" }, status: "online" }, activity = discord.Game(g) )
+           client.user.setPresence({ activity: { name: "?명령어를 입력해보세요.", name: "구매문의" }, status: "online" }, activity = discord.Game(g) )
            asyncio.sleep(5)
 })
 
