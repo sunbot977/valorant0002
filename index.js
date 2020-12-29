@@ -33,7 +33,6 @@ client.on("ready", () => {
         for (g in games)
             await client.change_presence(status = discord.Status.online, activity = discord.Game(g))
             await asyncio.sleep(5)
-            client.user.setPresence({ activity: { name: "?명령어를 입력해보세요." }, status: "online"})
 })
 
 client.on("guildMemberAdd", (member) => {
