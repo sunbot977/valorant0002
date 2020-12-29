@@ -24,7 +24,7 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 client.on("ready", () => {
   console.log("켰다.")
 
-  await client.change_presence({ activity: { name: "?명령어를 입력해보세요.", name: "구매문의" }, status: "online" })
+   client.change_presence({ activity: { name: "?명령어를 입력해보세요.", name: "구매문의" }, status: "online" })
 
   async.def.bt(games)
     await client.wait_until_ready()
