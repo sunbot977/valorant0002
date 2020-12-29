@@ -23,8 +23,18 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 
 client.on("ready", () => {
   console.log("켰다.")
-  client.user.setPresence({ activity: { name: "?명령어를 입력해보세요." }, status: "STREAMING"})
-  client.user.setActivity('TWITCH', { type: 'STREAMING', url: 'https://www.twitch.tv/bks04192'});
+  async.def.bt(['games','bots']);
+    await client.wait_until_ready()
+
+    while (not)client.is_closed();
+        for (g in games);
+            await client.change_presence(status = discord.Status.online, activity = discord.Game(g))
+            await asyncio.sleep(5)
+
+    while (not)client.is_closed();
+        for (g in bots);
+            await client.change_presence(status = discord.Status.online, activity = discord.bot(g))
+            await asyncio.sleep(5)
 })
 
 client.on("guildMemberAdd", (member) => {
