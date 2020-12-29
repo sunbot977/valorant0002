@@ -32,7 +32,7 @@ client.on("ready", () => {
     "VALORANT 전문 RAZE샵",
   ]
   let state_list_index = 1;
-  let change_delay = 3000; // 이건 초입니당. 1000이 1초입니당.
+  let change_delay = 5000; // 이건 초입니당. 1000이 1초입니당.
 
   function changeState() {
     setTimeout(() => {
