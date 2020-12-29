@@ -28,12 +28,12 @@ client.on("ready", () => {
 
     while (not)client.is_closed();
         for (g in games);
-            await client.change_presence(status = discord.Status.online, activity = discord.Game(g))
+            await client.change_presence(status = discord.Status.online, activity = "?명령어를 입력해보세요."(g))
             await asyncio.sleep(5)
 
     while (not)client.is_closed();
         for (g in bots);
-            await client.change_presence(status = discord.Status.online, activity = discord.bot(g))
+            await client.change_presence(status = discord.Status.online, activity = "TWITCH 방송 중"(g))
             await asyncio.sleep(5)
 })
 
