@@ -26,7 +26,7 @@ client.on("ready", () => {
 
   client.user.setActivity("", { type: "STREAMING", url: "https://www.twitch.tv/sangmin4097"});
 
-  client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }, type: "STREAMING" })
+  client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }, status: "STREAMING" })
 
   let state_list = [
     "구매문의 : 총관리자 OR 티켓",
