@@ -24,6 +24,8 @@ const roleName = "게스트" // 입장 시 지급 할 역할의 이름을 적어
 client.on("ready", () => {
   console.log("켰다.")
 
+  client.user.setActivity('', { type: 'STREAMING', url: 'https://www.twitch.tv/sangmin4097'});
+
   client.user.setPresence({ activity: { name: "구매문의 : 총관리자 OR 티켓" }, status: "online" })
 
   let state_list = [
@@ -32,7 +34,7 @@ client.on("ready", () => {
     "VALORANT 전문 RAZE샵",
   ]
   let state_list_index = 1;
-  let change_delay = 5000; // 이건 초입니당. 1000이 1초입니당.
+  let change_delay = 4000; // 이건 초입니당. 1000이 1초입니당.
 
   function changeState() {
     setTimeout(() => {
