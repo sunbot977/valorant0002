@@ -340,8 +340,10 @@ client.on("message", (message) => {
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788770078522867742/FB_IMG_1608116357341.jpg?width=396&height=495"
   let img3 = "https://media.discordapp.net/attachments/761226988340903937/789485074739232818/GIF_.gif"
   let embed = new Discord.MessageEmbed()
-    .setTitle("COVERT 구동영상","COVERT 구동영상 2")
-    .setURL("https://streamable.com/nm28j7","https://streamable.com/nz8q33")
+    .setTitle("COVERT 구동영상")
+    .setURL("https://streamable.com/nm28j7")
+    .setTitle("COVERT 구동영상 2")
+    .setURL("https://streamable.com/nz8q33")
     .setAuthor("P E P E . K R", img2)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
@@ -410,10 +412,10 @@ client.on("message", (message) => {
   let img2 = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let embed = new Discord.MessageEmbed()
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
-    .addField("**`구매문의`**","**__ADMIN or 티켓__**")
-    .addField("**`가격`**","**__이벤트 가격 : 1일 16,000 KRW__**\n")
+    .addField("**`구매문의`**","**__총관리자 or 티켓__**")
+    .addField("**`가격`**","**__이벤트 가격 : 1일 17,500 KRW__**\n")
     .addField("**`구동영상`**","**__데스매치 플레이 영상__**\nhttps://streamable.com/nm28j7\n")
-    .addField("**`구동영상 2`**","**__데스매치 플레이 영상__**\nhttps://streamable.com/nz8q33\n")
+    .addField("**`구동영상 2`**","**__데스매치 플레이 영상 2__**\nhttps://streamable.com/nz8q33\n")
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .setThumbnail(img2)
     .setImage(img)
