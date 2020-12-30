@@ -36,7 +36,7 @@ client.on("ready", () => {
   function changeState() {
     setTimeout(() => {
       console.log( "상태 변경 -> ", state_list[state_list_index] );
-      client.user.setPresence({ activity: { name: state_list[state_list_index],type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
+      client.user.setPresence({ activity: { name: `state_list[state_list_index]`,type: "STREAMING", url: "https://www.twitch.tv/hiko" } })
       state_list_index += 1;
       if(state_list_index >= state_list.length) {
         state_list_index = 0;
