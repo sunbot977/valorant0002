@@ -172,6 +172,8 @@ client.on("message", (message) => {
       .setFooter("P E P E . K R", img2)
 
     message.channel.send(embed)
+    message.delete()
+    
   } else if (message.content == "?명령어") {
     let helpImg = "https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png"
     let commandList = [
@@ -496,7 +498,7 @@ client.on("message", (message) => {
   var clearLine = message.content.slice("!청소 ".length)
   var isNum = !isNaN(clearLine)
   message.delete()
-  
+
   if (isNum && (clearLine <= 0 || 100 < clearLine)) {
     message.channel.send("1부터 100까지의 숫자만 입력해주세요.")
     return
