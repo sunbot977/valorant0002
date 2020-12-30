@@ -192,6 +192,7 @@ client.on("message", (message) => {
     embed.addField("Commands: ", commandStr)
 
     message.channel.send(embed)
+    message.channel.send("?명령어").then(msg => msg.delete())
   }
 
     else if (message.content == "*COVERT 파일") {
