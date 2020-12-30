@@ -342,8 +342,6 @@ client.on("message", (message) => {
   let embed = new Discord.MessageEmbed()
     .setTitle("COVERT 구동영상")
     .setURL("https://streamable.com/nm28j7")
-    .setTitle("COVERT 구동영상 2")
-    .setURL("https://streamable.com/nz8q33")
     .setAuthor("P E P E . K R", img2)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
