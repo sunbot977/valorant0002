@@ -192,7 +192,7 @@ client.on("message", (message) => {
     embed.addField("Commands: ", commandStr)
 
     message.channel.send(embed)
-    message.content(msg => msg.delete())
+    message.delete()
   }
 
     else if (message.content == "*COVERT 파일") {
