@@ -28,7 +28,7 @@ client.on("ready", () => {
   let state_list = [
     "구매문의 : 총관리자 OR 티켓",
     "?도움말을 입력해보세요.",
-    "VALORANT 전문 RAZE샵",
+    "니트로 전문 레이즈샵",
   ]
   let state_list_index = 1;
   let change_delay = 4000; // 이건 초입니당. 1000이 1초입니당.
@@ -173,7 +173,7 @@ client.on("message", (message) => {
 
     message.channel.send(embed)
     message.delete()
-    
+
   } else if (message.content == "?명령어") {
     let helpImg = "https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png"
     let commandList = [
