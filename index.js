@@ -212,6 +212,7 @@ client.on("message", (message) => {
       .setFooter("COVERT 파일함", img)
 
     message.channel.send(embed)
+    message.delete()
 
   } else if (message.content == "?배너") {
     let helpImg = "https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png"
@@ -231,7 +232,8 @@ client.on("message", (message) => {
     embed.addField("[ 배너조건 ] : ", commandStr)
 
     message.channel.send(embed)
-  
+    message.delete()
+
 } else if (message.content == "?약고") {
   let img = "https://media.discordapp.net/attachments/788788207432368159/789041148660154428/unknown.png"
   let img2 = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
@@ -250,6 +252,8 @@ client.on("message", (message) => {
     .setFooter("COVERT", img2)
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "?중고") {
   let img = "https://media.discordapp.net/attachments/788788207432368159/789049796093542410/unknown.png"
   let img2 = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
@@ -268,6 +272,8 @@ client.on("message", (message) => {
     .setFooter("COVERT", img2)
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "?빡고") {
   let img = "https://media.discordapp.net/attachments/788788207432368159/789049518518960128/unknown.png"
   let img2 = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
@@ -286,8 +292,9 @@ client.on("message", (message) => {
     .setFooter("COVERT", img2)
 
     message.channel.send(embed)
-} 
-else if (message.content == "?이벤트") {
+    message.delete()
+
+  } else if (message.content == "?이벤트") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788985817309118484/FB_IMG_1608116400231.jpg?width=516&height=495"
   let embed = new Discord.MessageEmbed()
@@ -306,6 +313,8 @@ else if (message.content == "?이벤트") {
     .setFooter("COVERT 이벤트", img)
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "*사용법") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788770078522867742/FB_IMG_1608116357341.jpg?width=396&height=495"
@@ -322,6 +331,8 @@ else if (message.content == "?이벤트") {
     .setColor("#6bb6ff")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "*구동영상") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788770078522867742/FB_IMG_1608116357341.jpg?width=396&height=495"
@@ -338,6 +349,8 @@ else if (message.content == "?이벤트") {
     .setColor("#1976D2")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "?ESP") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788770078522867742/FB_IMG_1608116357341.jpg?width=396&height=495"
@@ -354,6 +367,8 @@ else if (message.content == "?이벤트") {
     .setColor("#a0ceff")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "?에임봇") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let img2 = "https://media.discordapp.net/attachments/788744790291644426/788770078522867742/FB_IMG_1608116357341.jpg?width=396&height=495"
@@ -370,6 +385,8 @@ else if (message.content == "?이벤트") {
     .setColor("#a0ceff")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "*COVERT 기능") {
   let img = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
   let embed = new Discord.MessageEmbed()
@@ -384,6 +401,8 @@ else if (message.content == "?이벤트") {
     .setColor("#0b0c0e")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "*COVERT 구매문의") {
   let img = "https://media.discordapp.net/attachments/761226988340903937/789485074739232818/GIF_.gif"
   let img2 = "https://images-ext-2.discordapp.net/external/3IYkyAF-0_UQ-oq8Em0B-BHtUjw_IDbjvSYoA1QYw0o/https/covertcheats.com/forums/images/logo.png"
@@ -399,6 +418,8 @@ else if (message.content == "?이벤트") {
     .setColor("#0b0c0e")
 
     message.channel.send(embed)
+    message.delete()
+
 } else if (message.content == "?초대코드2") {
   client.guilds.cache.array().forEach((x) => {
     x.channels.cache
@@ -406,6 +427,7 @@ else if (message.content == "?이벤트") {
       .createInvite({ maxAge: 0 }) // maxAge: 0은 무한이라는 의미, maxAge부분을 지우면 24시간으로 설정됨
       .then((invite) => {
         message.channel.send(invite.url)
+        message.delete()
       })
       .catch((err) => {
         if (err.code == 50013) {
@@ -422,6 +444,7 @@ else if (message.content == "?이벤트") {
     .createInvite({ maxAge: 0 }) // maxAge: 0은 무한이라는 의미, maxAge부분을 지우면 24시간으로 설정됨
     .then((invite) => {
       message.channel.send(invite.url)
+      message.delete()
     })
     .catch((err) => {
       if (err.code == 50013) {
@@ -472,7 +495,8 @@ else if (message.content == "?이벤트") {
 
   var clearLine = message.content.slice("!청소 ".length)
   var isNum = !isNaN(clearLine)
-
+  message.delete()
+  
   if (isNum && (clearLine <= 0 || 100 < clearLine)) {
     message.channel.send("1부터 100까지의 숫자만 입력해주세요.")
     return
