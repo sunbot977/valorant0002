@@ -51,7 +51,7 @@ client.on("guildMemberAdd", (member) => {
   const newUser = member.user
   const welcomeChannel = guild.channels.cache.find((channel) => channel.name == welcomeChannelName)
 
-  welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`) // 올바른 채널명을 기입하지 않았다면, Cannot read property 'send' of undefined; 오류가 발생합니다.
+  welcomeChannel.send(`<@${newUser.id}>님 ${welcomeChannelComment}\n`) // 올바른 채널명을 기입하지 않았다면, Cannot read property 'send' of undefined; 오류가 발생합니다.
 })
 
 client.on("guildMemberRemove", (member) => {
