@@ -324,7 +324,7 @@ client.on("message", (message) => {
   let embed = new Discord.MessageEmbed()
     .setTitle("COVERT 사용법")
     .setURL("https://streamable.com/wyro9m")
-    .setAuthor("P E P E . K R", img2)
+    .setAuthor("P E P E . K R", img)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .addField("**`링크 누를 시 COVERT 사용법 영상이 나옵니다.`**","**__영상 참고해주세요__**\nhttps://streamable.com/wyro9m\n")
@@ -342,7 +342,7 @@ client.on("message", (message) => {
   let embed = new Discord.MessageEmbed()
     .setTitle("COVERT 구동영상")
     .setURL("https://streamable.com/nm28j7")
-    .setAuthor("P E P E . K R", img2)
+    .setAuthor("P E P E . K R", img)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .addField("**`링크 누를 시 COVERT 구동영상이 나옵니다.`**","**__데스매치 빡고영상입니다.__**\nhttps://streamable.com/nm28j7\nhttps://streamable.com/nz8q33\n")
@@ -360,7 +360,7 @@ client.on("message", (message) => {
   let embed = new Discord.MessageEmbed()
     .setTitle("COVERT Visuals UI 번역")
     .setURL("https://media.discordapp.net/attachments/761226988340903937/789540374205038652/sdsd.jpg?width=399&height=495")
-    .setAuthor("P E P E . K R", img2)
+    .setAuthor("P E P E . K R", img)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .addField("**`COVERT Visuals UI 부분`**","**__ESP UI번역 버전입니다.__**\n")
@@ -378,7 +378,7 @@ client.on("message", (message) => {
   let embed = new Discord.MessageEmbed()
     .setTitle("COVERT Aimbot UI 번역")
     .setURL("https://media.discordapp.net/attachments/761226988340903937/789540896424591440/dsds.jpg?width=398&height=495")
-    .setAuthor("P E P E . K R", img2)
+    .setAuthor("P E P E . K R", img)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .addField("**`COVERT Aimbot UI 부분`**","**__에임봇 UI번역 버전입니다.__**\n")
