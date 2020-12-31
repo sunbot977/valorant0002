@@ -19,7 +19,6 @@ const welcomeChannelName = "안녕하세요" // 입장 시 환영메시지를 �
 const byeChannelName = "안녕히가세요" // 퇴장 시 메시지를 전송 할 채널의 이름을 입력하세요.
 const welcomeChannelComment = "레이즈샵에 오신 걸 환영합니다." // 입장 시 전송할 환영메시지의 내용을 입력하세요.
 const byeChannelComment = "안녕히가세요, 다음에 만나요 😊" // 퇴장 시 전송할 메시지의 내용을 입력하세요.
-const roleName = "" // 입장 시 지급 할 역할의 이름을 적어주세요.
 
 client.on("ready", () => {
   console.log("켰다.")
@@ -53,7 +52,6 @@ client.on("guildMemberAdd", (member) => {
   const welcomeChannel = guild.channels.cache.find((channel) => channel.name == welcomeChannelName)
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`) // 올바른 채널명을 기입하지 않았다면, Cannot read property 'send' of undefined; 오류가 발생합니다.
-  member.roles.add(guild.roles.cache.find((r) => r.name === roleName).id)
 })
 
 client.on("guildMemberRemove", (member) => {
