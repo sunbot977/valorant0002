@@ -344,7 +344,7 @@ client.on("message", (message) => {
     .setAuthor("P E P E . K R", img)
     .setThumbnail(img)
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
-    .addField("**`링크 누를 시 COVERT 구동영상이 나옵니다.`**","**__데스매치 빡고영상입니다.__**\nhttps://streamable.com/nm28j7\nhttps://streamable.com/nz8q33\n")
+    .addField("**`링크 누를 시 COVERT 구동영상이 나옵니다.`**","**__데스매치 빡고영상입니다.__**\nhttps://streamable.com/nm28j7\nhttps://streamable.com/nz8q33\nhttps://streamable.com/ntw6od\n")
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .setImage(img3)
     .setColor("#1976D2")
@@ -413,6 +413,7 @@ client.on("message", (message) => {
     .addField("**`가격`**","**__1일 : 17,500 KRW__**\n")
     .addField("**`구동영상`**","**__데스매치 플레이 영상__**\nhttps://streamable.com/nm28j7\n")
     .addField("**`구동영상 2`**","**__데스매치 플레이 영상 2__**\nhttps://streamable.com/nz8q33\n")
+    .addField("**`구동영상 3`**","**__데스매치 플레이 영상 3__**\nhttps://streamable.com/ntw6od\n")
     //.addBlankField()  < 해당 구문은 .addField('\u200b', '\u200b') 로 대체할 수 있습니다.
     .setThumbnail(img2)
     .setImage(img)
