@@ -47,7 +47,13 @@ client.on("ready", () => {
 });
 
 client.on("message",  message => {if(message.channel.id == '796025141368717382') {
-  message.react('💕')
+  message.react('❤')
+  message.react('🧡')
+  message.react('💛')
+  message.react('💚')
+  message.react('💙')
+  message.react('💜')
+  message.react('🤍')
 }})
 
 client.on("guildMemberAdd", (member) => {
