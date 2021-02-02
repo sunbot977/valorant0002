@@ -55,6 +55,13 @@ client.on("message",  message => {if(message.channel.id == '761901043205799936')
   message.react('💜')
 }})
 
+client.on("message",  message => {if(message.channel.id == '761901043205799936') {
+  message.react('😋')
+  message.react('😆')
+  message.react('😉')
+  message.react('🥳')
+}})
+
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild
   const newUser = member.user
