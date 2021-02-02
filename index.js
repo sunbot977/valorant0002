@@ -46,7 +46,7 @@ client.on("ready", () => {
   changeState();
 });
 
-client.on("message",  message => {if(message.channel.id == '796025141368717382') {
+client.on("message",  message => {if(message.channel.id == '761901043205799936') {
   message.react('❤')
   message.react('🧡')
   message.react('💛')
