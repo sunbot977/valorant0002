@@ -46,6 +46,11 @@ client.on("ready", () => {
   changeState();
 });
 
+client.on("message",  message => {if(message.channel.id == '761901043205799936') {
+  message.react(':emoji_131~1:')
+  message.react(':emoji_71:')
+}})
+
 client.on("guildMemberAdd", (member) => {
   const guild = member.guild
   const newUser = member.user
